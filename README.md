@@ -1,2 +1,2 @@
-# ZEAL_v2
-ZEAL version 2 optimized for web server deployment
+# ZEAL_web
+The ZEAL app optimized for web deployment at [zeal.andrelab.org](zeal.andrelab.org)
