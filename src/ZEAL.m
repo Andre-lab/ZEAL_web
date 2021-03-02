@@ -191,7 +191,7 @@ classdef ZEAL < matlab.mixin.Copyable %handle
             default_altLocID = 'A';
             
             expected_ShowLog = {'basic', 'standard', 'detailed', 'none'};
-            default_LogOption = 'detailed';
+            default_LogOption = 'standard';
             
             default_AlignLater = false;
             default_inputParserOnly = false;
