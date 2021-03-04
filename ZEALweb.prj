@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.webdeploy" plugin-version="1.0">
-  <configuration file="/Users/filippersson/Dropbox/PostDoc/Research/Zernike/matlab/ZEAL_web_v2/ZEALweb.prj" location="/Users/filippersson/Dropbox/PostDoc/Research/Zernike/matlab/ZEAL_web_v2" name="ZEALweb" target="target.webdeploy" target-name="Web App Compiler">
+  <configuration file="/Users/filippersson/Dropbox/PostDoc/Research/Zernike/matlab/ZEAL_web/ZEALweb.prj" location="/Users/filippersson/Dropbox/PostDoc/Research/Zernike/matlab/ZEAL_web" name="ZEALweb" target="target.webdeploy" target-name="Web App Compiler">
     <param.appname>ZEALweb</param.appname>
     <param.intermediate>${PROJECT_ROOT}/ZEALweb</param.intermediate>
     <param.files.only>${PROJECT_ROOT}/ZEALweb</param.files.only>
@@ -22,15 +22,18 @@
     <fileset.web.main>
       <file>${PROJECT_ROOT}/ZEALweb.mlapp</file>
     </fileset.web.main>
-    <fileset.resources />
+    <fileset.resources>
+      <file>${PROJECT_ROOT}/ext</file>
+      <file>${PROJECT_ROOT}/src</file>
+    </fileset.resources>
     <fileset.depfun />
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}/ZEALweb" name="ZEALweb.ctf" optional="false">/Users/filippersson/Dropbox/PostDoc/Research/Zernike/matlab/ZEAL_web_v2/ZEALweb/ZEALweb.ctf</file>
+      <file location="${PROJECT_ROOT}/ZEALweb" name="ZEALweb.ctf" optional="false">/Users/filippersson/Dropbox/PostDoc/Research/Zernike/matlab/ZEAL_web/ZEALweb/ZEALweb.ctf</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>/Applications/MATLAB_R2020b.app</root>
+      <root>/Applications/MATLAB_R2020a.app</root>
       <toolboxes>
         <toolbox name="matlabcoder" />
         <toolbox name="neuralnetwork" />
