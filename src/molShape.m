@@ -400,10 +400,10 @@ classdef molShape < matlab.mixin.Copyable %handle
             
             n_atoms = size(Xcrds,1);
             
-            elements = {'H','C','N','O','S','X'};
-            elementCodes = [1 2 3 4 5 6];
-            vdwRadii = [1.2 1.7 1.55 1.52 1.8];
-            avgRadius = mean(vdwRadii(2:end));
+            elements = {'H','C','N','O','S','P','X'};
+            elementCodes = [1 2 3 4 5 6 7];
+            vdwRadii = [1.2 1.7 1.55 1.52 1.8 1.8];
+            avgRadius = mean(vdwRadii(2:end-1));
             
             count = 0;
             Hcount = 0;
@@ -424,7 +424,7 @@ classdef molShape < matlab.mixin.Copyable %handle
                 
                 % ONLY HEAVY ATOMS
                 try
-                    if (element_i=='C') || (element_i=='N')  || (element_i=='O') || (element_i=='S') || (element_i=='X')
+                    if (element_i=='C') || (element_i=='N')  || (element_i=='O') || (element_i=='S') || (element_i=='P') || (element_i=='X')
                         
                         count = count + 1;
                         %
@@ -448,6 +448,8 @@ classdef molShape < matlab.mixin.Copyable %handle
                             case 5 % S
                                 atomList(count,6) = vdwRadii(5);
                             case 6
+                                atomList(count,6) = vdwRadii(6);
+                            otherwise 
                                 atomList(count,6) = avgRadius;
                         end
                         
