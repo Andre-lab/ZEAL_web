@@ -1,2 +1,2 @@
 # ZEAL_web
-The ZEAL app optimized for web deployment at [zeal.andrelab.org](http://zeal.andrelab.org/webapps/home/)
+The ZEAL app optimized for web deployment at [https://andrelab.org/zeal](https://andrelab.org/zeal)
