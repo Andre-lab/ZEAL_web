@@ -497,7 +497,7 @@ classdef ZEAL < matlab.mixin.Copyable %handle
                         [obj.rotating.ZC.ShapeFunction, ~] = molShape.SAsurface(atomList, obj.Settings.molShape.GridRes, probeRadius, obj.Settings.molShape.ShellThickness);
                         
                     otherwise % electron density
-                        [obj.FunctionData, ~, ~] = molShape.electronDensity(atomList, obj.Settings.molShape.GridRes, obj.Settings.molShape.SmearFactor);
+                        [obj.rotating.ZC.ShapeFunction, ~, ~] = molShape.electronDensity(atomList, obj.Settings.molShape.GridRes, obj.Settings.molShape.SmearFactor);
                         
                 end
                 
