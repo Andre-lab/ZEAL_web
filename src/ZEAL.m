@@ -893,11 +893,10 @@ classdef ZEAL < matlab.mixin.Copyable %handle
                 
                 fprintf(fid, '%-12s Cite: \n', 'REMARK');
                 fprintf(fid, '%-12s F. Ljung and I. André, \n', 'REMARK');
-                fprintf(fid, '%-12s ZEAL: Structure alignment based on shape similarity, Bioinformatics (2021) \n', 'REMARK');
-                fprintf(fid, '%-12s Bioinformatics (2021) \n', 'REMARK');
-                
-                fprintf(fid, '%-12s \n', 'REMARK');
-                
+                fprintf(fid, '%-12s ZEAL: Protein structure alignment based on shape similarity, \n', 'REMARK');
+                fprintf(fid, '%-12s Bioinformatics (2021), \n', 'REMARK');
+                fprintf(fid, '%-12s doi: 10.1093/bioinformatics/btab205 \n', 'REMARK');
+              
             end
             
             % check integrity of some data fields
